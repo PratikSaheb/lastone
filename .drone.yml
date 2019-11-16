@@ -2,11 +2,6 @@ pipeline:
  mytask:
   image: docker 
   commands:
-   - sudo ocker build -t newist .
-   - sudo docker ps -a
-   - sudo docker login -u reoltech -p Reolus@123
-   - sudo docker image tag newist reoltech/ns:1
-   - sudo docker image push reoltech/ns:1
-   - sudo  echo "done"
-  when:
-   event: push
+   - docker ps -a
+   when:
+	event: push
