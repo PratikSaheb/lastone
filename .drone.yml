@@ -4,4 +4,4 @@ pipeline:
   commands:
    - docker ps -a
    when:
-	event: push
+    event: push
