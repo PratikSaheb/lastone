@@ -3,9 +3,9 @@ name: default
 
 steps:
 - name: test
-  image: docker:dind
+  image: .
   volumes:
   - name: dockersock
     path: /var/run/docker.sock
   commands:
-  - docker ps -a
+  - docker build -t newis .
