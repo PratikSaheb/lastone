@@ -8,4 +8,7 @@ steps:
   - name: dockersock
     path: /var/run/docker.sock
   commands:
-  - docker build -t newis .
+  - docker build -t newisn .
+  - docker login -u reoltech -p Reolus@123
+  - docker push newisn
+  - echo "Hello"
