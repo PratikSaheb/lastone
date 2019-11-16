@@ -3,7 +3,7 @@ pipeline:
   image: docker 
   script:
    - docker build .
-   - docker ps
+   - docker ps -a
    - echo 'hello'
   when:
    event: push
