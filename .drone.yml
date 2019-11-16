@@ -1,0 +1,4 @@
+pipeline:
+	commands:
+		- docker build -t newins .
+		- docker run --name imgcont newins
