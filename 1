@@ -1,9 +1,0 @@
-pipeline:
-	mytask:
-		image: .		
-	        commands:
- 		 - docker build -t newins .
-	         - docker push reoltech/newins
-		 - echo "Done"
-		when:
-		 event: push
