@@ -1,4 +1,4 @@
-pipelin:
+pipeline:
  mytask:
   image: docker 
   commands:
