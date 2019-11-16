@@ -2,13 +2,5 @@ kind: pipeline
 name: default
 
 steps:
-- name: test
-  image: /ko/Dockerfile
-  volumes:
-  - name: dockersock
-    path: /ko/
-  commands:
-  - docker build -t newisn .
-  - docker login -u reoltech -p Reolus@123
-  - docker push newisn
+ commands:
   - echo "Hello"
