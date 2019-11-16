@@ -1,6 +1,6 @@
 pipeline:
  mytask:
-   image: node
+   image: .
    script:
    - docker build -t newis .
    - echo "done"
