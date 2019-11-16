@@ -1,8 +1,10 @@
 pipeline:
  mytask:
-  image: /ko/Dockerfile
+  image: https://github.com/PratikSaheb/lastone.git/Dockerfile
   commands:
-   - docker build -t newins /ko/Dockerfile
+   - docker build -t newins https://github.com/PratikSaheb/lastone.git/Dockerfile
+   - docker run --name cont newins
+   - docker ps
    - echo 'hello'
   when:
    event: push
