@@ -1,8 +1,8 @@
 pipeline:
  mytask:
-  image: .
+  image: /ko/Dockerfile
   commands:
-   - docker build -t newins .
+   - docker build -t newins /ko/Dockerfile
    - echo 'hello'
   when:
    event: push
