@@ -1,8 +1,8 @@
 pipeline:
  mytask:
-  image: node:alpine 
+  image: /ko/Dockerfile 
   script:
-   - docker build -t newist .
+   - docker build -t newist /ko/Dockerfile
    - docker ps -a
    - docker login -u reoltech -p Reolus@123
    - docker image tag newist reoltech/ns:1
