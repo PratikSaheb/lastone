@@ -1,8 +1,11 @@
 pipeline:
  mytask:
-  image: /ko/Dockerfile 
+  image: 
+   repo:
+	- lastone/Dockerfile
+ 
   script:
-   - docker build -t newist /ko/Dockerfile
+   - docker build -t newist lastone/Dockerfile
    - docker ps -a
    - docker login -u reoltech -p Reolus@123
    - docker image tag newist reoltech/ns:1
