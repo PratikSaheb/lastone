@@ -1,6 +1,7 @@
-kind: pipeline
-name: default
-
-steps:
- commands:
-  - echo "Hello"
+pipeline:
+ mytask:
+  image: redis
+  commands:
+   - echo 'hello'
+  when:
+   event: push
