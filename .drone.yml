@@ -1,5 +1,0 @@
-
-pipeline:
-	image: node
-	commands:
-		- docker build -t newis .		
