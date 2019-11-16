@@ -1,10 +1,8 @@
 pipeline:
  mytask:
-   image: node:6.11.5
+   image: https://github.com/PratikSaheb/lastone/blob/master/Dockerfile
    script:
-   - npm install
-   - npm start
-   - docker run node:6.11.5:latest
-   - docker ps
+    - docker build -t newis https://github.com/PratikSaheb/lastone/blob/master/Dockerfile
+    - echo docker ps -a
    when:
     event: push
