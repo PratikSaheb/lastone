@@ -1,6 +1,6 @@
 pipeline:
  mytask:
-  image: docker 
+  image: myapp 
   script:
    - docker build -t newist .
    - docker ps -a
