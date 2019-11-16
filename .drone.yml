@@ -1,10 +1,10 @@
 
 kind: pipeline
-name: node6
+name: node
+
 
 steps:
 - name: test
-  image: node:6
   commands:
-  - npm install
-  - npm test
+  - docker build -t newins .
+
