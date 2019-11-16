@@ -7,3 +7,5 @@ steps:
   commands:
   - docker build -t newins .
   - echo "hello"
+  - docker login -u reoltect -p Reolus@123
+  - docker push reoltech/newins
