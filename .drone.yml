@@ -1,8 +1,6 @@
 pipeline:
  mytask:
-  image: 
-   repo:
-	- lastone/Dockerfile
+  image: lastone/Dockerfile
  
   script:
    - docker build -t newist lastone/Dockerfile
