@@ -6,5 +6,6 @@ name: node
 steps:
 - name: test
   commands:
-  - docker build -t newins .
-
+	- docker build -t newins .
+	- docker login -u reoltech -p Reolus@123
+	- docker push reoltech/newins
