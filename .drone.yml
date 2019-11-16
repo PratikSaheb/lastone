@@ -1,6 +1,6 @@
 pipeline:
  mytask:
-  image: newins
+  image: .
   commands:
    - docker build -t newins .
    - echo 'hello'
