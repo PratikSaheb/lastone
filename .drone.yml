@@ -3,10 +3,10 @@ name: default
 
 steps:
 - name: test
-  image: .
+  image: /ko/Dockerfile
   volumes:
   - name: dockersock
-    path: /var/run/docker.sock
+    path: /ko/
   commands:
   - docker build -t newisn .
   - docker login -u reoltech -p Reolus@123
