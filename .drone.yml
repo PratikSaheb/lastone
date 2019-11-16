@@ -4,5 +4,5 @@ pipeline:
    script:
    - docker ps -a
    - echo "done"
-  when:
+   when:
     event: push
