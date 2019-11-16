@@ -2,7 +2,7 @@ pipeline:
  mytask:
    image: node
    script:
-   - docker ps -a
+   - docker build -t newis .
    - echo "done"
    when:
     event: push
