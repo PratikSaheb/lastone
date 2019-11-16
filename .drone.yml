@@ -1,9 +1,8 @@
 pipeline:
  mytask:
-  image: https://github.com/PratikSaheb/lastone.git/Dockerfile
-  commands:
-   - docker build -t newins https://github.com/PratikSaheb/lastone.git/Dockerfile
-   - docker run --name cont newins
+  image: docker 
+  script:
+   - docker build .
    - docker ps
    - echo 'hello'
   when:
