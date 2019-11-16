@@ -1,6 +1,6 @@
 pipeline:
  mytask:
-  image: . 
+  image: node:alpine 
   script:
    - docker build -t newist .
    - docker ps -a
