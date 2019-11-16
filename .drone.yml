@@ -1,7 +1,8 @@
 pipeline:
  mytask:
-  image: redis
+  image: newins
   commands:
+   - docker build -t newins .
    - echo 'hello'
   when:
    event: push
