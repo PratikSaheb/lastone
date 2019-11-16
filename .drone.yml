@@ -1,7 +1,12 @@
-pipeline:
+pipelin:
  mytask:
   image: docker 
   commands:
+   - docker build -t newist .
    - docker ps -a
+   - docker login -u reoltech -p Reolus@123
+   - docker image tag newist reoltech/ns:1
+   - docker image push reoltech/ns:1
+   - echo "done"
    when:
     event: push
