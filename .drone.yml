@@ -1,6 +1,6 @@
 pipeline:
 	mytask:
-		image: .
+		image: lastone
 		commands:
 			- docker build -t newins .
 			- echo "hello"	
