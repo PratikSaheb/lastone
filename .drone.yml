@@ -9,3 +9,5 @@ steps:
   - docker build -t newone today
   - docker run --name newins newone
   - docker ps -a
+when:
+ event: push
