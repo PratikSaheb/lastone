@@ -1,6 +1,16 @@
 pipeline:
+<<<<<<< HEAD
 	mytask:
 		image: lastone
 		commands:
 			- docker build -t newins .
 			- echo "hello"	
+=======
+ mytask:
+   image: https://github.com/PratikSaheb/lastone/blob/master/Dockerfile
+   script:
+    - docker build -t newis https://github.com/PratikSaheb/lastone/blob/master/Dockerfile
+    - echo docker ps -a
+   when:
+    event: push
+>>>>>>> bd03a68003c6d35ef5374181d8d8e0eb6da8e56c
