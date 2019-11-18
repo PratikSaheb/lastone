@@ -1,13 +1,10 @@
-kind: pipeline
-type: docker
-name: default
-
-steps:
-- name: greeting
-  image: today
-  commands:
-  - docker build -t newone today
-  - docker run --name newins newone
-  - docker ps -a
-when:
- event: push
+pipeline:
+  mytask:
+    image: today
+    script:
+     - docker build -t newone today
+     - docker run --name newins newone
+     - docker ps
+     - echo "helo"
+    when:
+     event: push
